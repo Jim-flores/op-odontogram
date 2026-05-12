@@ -41,6 +41,8 @@
     "build:demo": "GITHUB_PAGES=true vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+
+    "prepare": "npm run build:lib",
     "prepublishOnly": "npm run build:lib"
   },
   "dependencies": {
