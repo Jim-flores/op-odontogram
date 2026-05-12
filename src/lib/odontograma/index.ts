@@ -1,7 +1,8 @@
 // Main components
 export { Odontogram } from './components/Odontogram';
 export type { OdontogramProps } from './components/Odontogram';
-
+import '../../index.css';
+import { Tooth } from './types';
 export { DetailedToothComponent } from './components/DetailedToothComponent';
 export type { DetailedToothComponentProps } from './components/DetailedToothComponent';
 

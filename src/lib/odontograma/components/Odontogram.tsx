@@ -28,14 +28,14 @@ export const Odontogram: React.FC<OdontogramProps> = ({
   selectedTooth, 
   onToothClick,
   showBiteEffect,
-  onToggleBiteEffect,
-  isAnimatingBite,
-  onSimulateBite,
-  selectedCaseId,
-  onCaseSelect,
+  // onToggleBiteEffect,
+  // isAnimatingBite,
+  // onSimulateBite,
+  // selectedCaseId,
+  // onCaseSelect,
   developerMode = false,
   onToggleDeveloperMode,
-  onToothHover
+  // onToothHover
 }) => {
   const getQuadrantTeeth = (quadrant: number) => {
     return teeth.filter(tooth => tooth.quadrant === quadrant).sort((a, b) => a.position - b.position);

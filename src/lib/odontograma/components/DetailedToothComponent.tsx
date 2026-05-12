@@ -1,8 +1,7 @@
 import React from 'react';
 import { Tooth, ToothStatus } from '../types';
 import { getToothVerticalOffset } from '../config/layoutConfig';
-import { TOOTH_HEIGHT } from '../constants/layout';
-import { Check, AlertCircle, CircleDot, Crown, X, Plus, Zap, AlertTriangle as TriangleAlert, Link, AlertOctagon } from 'lucide-react';
+// import { Check, AlertCircle, CircleDot, Crown, X, Plus, Zap, AlertTriangle as TriangleAlert, Link, AlertOctagon } from 'lucide-react';
 
 export interface DetailedToothComponentProps {
   tooth: Tooth;
@@ -14,19 +13,19 @@ export interface DetailedToothComponentProps {
   developerMode?: boolean;
 }
 
-const statusIcons = {
-  healthy: Check,
-  caries: AlertCircle,
-  filled: CircleDot,
-  crown: Crown,
-  extracted: X,
-  implant: Plus,
-  root_canal: Zap,
-  fracture: TriangleAlert,
-  bridge: Link,
-  extraction_indicated: AlertOctagon,
-  not_erupted: undefined,
-};
+// const statusIcons = {
+//   healthy: Check,
+//   caries: AlertCircle,
+//   filled: CircleDot,
+//   crown: Crown,
+//   extracted: X,
+//   implant: Plus,
+//   root_canal: Zap,
+//   fracture: TriangleAlert,
+//   bridge: Link,
+//   extraction_indicated: AlertOctagon,
+//   not_erupted: undefined,
+// };
 
 export const DetailedToothComponent: React.FC<DetailedToothComponentProps> = ({ 
   tooth, 
@@ -199,7 +198,7 @@ export const DetailedToothComponent: React.FC<DetailedToothComponentProps> = ({
     onToothClick(tooth, e);
   };
 
-  const StatusIcon = statusIcons[tooth.status];
+  // const StatusIcon = statusIcons[tooth.status];
   const verticalOffset = getToothVerticalOffset(tooth.id);
 
   // Componente del label (número del diente)

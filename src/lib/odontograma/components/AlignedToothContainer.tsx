@@ -1,5 +1,5 @@
 import React from 'react';
-import { TOOTH_SLOT_HEIGHT, TEMPORARY_TOOTH_SLOT_HEIGHT, TOOTH_SLOT_WIDTH, DEV_COLORS } from '../constants/layout';
+import { TOOTH_SLOT_HEIGHT, TEMPORARY_TOOTH_SLOT_HEIGHT, DEV_COLORS } from '../constants/layout';
 
 export interface AlignedToothContainerProps {
   children: React.ReactNode;

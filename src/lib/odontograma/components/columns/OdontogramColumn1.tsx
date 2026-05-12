@@ -18,7 +18,6 @@ export const OdontogramColumn1: React.FC<OdontogramColumnProps> = ({
   developerMode,
   selectedTooth,
   onToothClick,
-  groupNumber,
 }) => {
   return (
     <div className="flex flex-col">
